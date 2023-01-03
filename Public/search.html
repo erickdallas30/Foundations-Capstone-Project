@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">    
+    <title>Game Up!</title>
+</head>
+<header>
+    <h1>GAME UP! <span>[or Game Over]</span></h1>
+    <a href="./game-list.html"><button id="favGames" >Favorite Game List</button></a>
+</header>
+
+<body>
+    <div class="page-box">
+        <div class="icon-bar">
+            <a class="active" href="./index.html"><i class="fa fa-gamepad"></i></a>
+            <a href="./search.html"><i class="fa fa-search"></i></a>
+            <a href="./game-trailers.html"><i class="fa fa-video"></i></a>
+            <a href="https://api.rawg.io/docs/" target="_blank"><i class="fa fa-globe"></i></a>
+            <a href="#" onclick="darkMode()"><i class="fa-solid fa-toggle-off"></i></a>
+        </div>
+
+        <div class="container">
+            <div class="search-container">
+              <input
+                type="search" 
+                placeholder="Enter game name here..."
+                id="game-name" value=""/>
+              <button id="search-btn">Search</button>
+            </div>
+            <div id="result"></div>
+          </div>
+
+        <!-- <div class="list-container">
+            <form>
+                <h1>Favorite Game List</h1>
+                <p>Type the name of your favorite game</p>
+                <input type='text' id="title" placeholder="Game name..." />
+                <button class="favSearchBtn">Search Game</button>
+            </form>
+        </div> -->
+    </div>
+
+    <script src="https://kit.fontawesome.com/8b702e918c.js" crossorigin="anonymous"></script>
+    <script src="/node_modules/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
