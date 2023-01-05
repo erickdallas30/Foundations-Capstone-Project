@@ -27,7 +27,7 @@ let getGame2 = () => {
             <div class='info'>                
                 <div>
                     <h2>${results[0].name}</h2>   
-                    <iframe width="420" height="315"
+                    <iframe width="560" height="315"
                     src="${results[0].data.max}">
                     </iframe>
                 </div>

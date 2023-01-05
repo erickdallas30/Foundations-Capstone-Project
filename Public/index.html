@@ -5,44 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">
     <title>Game Up!</title>
 </head>
 <header>
-    <h1>GAME UP! <span>[or Game Over]</span></h1> 
-    <a href="./game-list.html"><button id="favGames" >Favorite Game List</button></a>     
+    <h1>GAME UP! <span>[or Game Over]</span></h1>
+    <a href="./game-list.html"><button id="favGames">Favorite Game List</button></a>
 </header>
 
 <body>
     <div class="page-box">
         <div class="icon-bar">
-            <a href="./index.html"class="active" href="#"><i class="fa fa-gamepad"></i></a>
-            <a href="./search.html"><i class="fa fa-search"></i></a>
-            <a href="./game-trailers.html"><i class="fa fa-video"></i></a>
-            <a href="https://api.rawg.io/docs/" target="_blank"><i class="fa fa-globe"></i></a>
-            <a href="#" onclick="darkMode()"><i class="fa-solid fa-toggle-off"></i></a>
+            <a title="HomePage" href="./index.html" class="active" href="#"><i class="fa fa-gamepad"></i></a>
+            <a title="Search Games Here" href="./search.html"><i class="fa fa-search"></i></a>
+            <a title="Search Game Trailers Here" href="./game-trailers.html"><i class="fa fa-video"></i></a>
+            <a title="RAWG API Website" href="https://api.rawg.io/docs/" target="_blank"><i class="fa fa-globe"></i></a>
+            <a title="Click for Dark Mode" href="#" onclick="darkMode()"><i class="fa-solid fa-toggle-off"></i></a>
         </div>
 
         <div class="game-container">
             <section class="games">
             </section>
         </div>
-        
-        
-
-        <!-- <div class="list-container">
-            <div class="gameList">
-                <form>
-                    <h1>Favorite Game List</h1>
-                    <p>Type the name of your favorite game</p>
-                    <input type='text' id="title" placeholder="Game name..." />
-                    
-                    </section>
-                    <button class="favFoodBtn">add Favorite Game</button>
-                  </form>
-
-            </div>
-        </div> -->
     </div>
 
     <script src="https://kit.fontawesome.com/8b702e918c.js" crossorigin="anonymous"></script>

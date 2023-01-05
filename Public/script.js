@@ -54,7 +54,7 @@ let getGame = () => {
             result.innerHTML = `
             <div class='card'>
               <div class='info'>
-                <img src=${results[0].background_image} class='poster'>
+                <img id='imgSearch' src=${results[0].background_image} class='poster'>
                 <div>
                   <h2>${results[0].name}</h2>
                   <h3>Rating: ${results[0].rating}</h3>
@@ -64,7 +64,7 @@ let getGame = () => {
               </div>            
                      
               <div class='info'>
-                <img src=${results[2].background_image} class='poster'>
+                <img id='imgSearch' src=${results[2].background_image} class='poster'>
                 <div>
                   <h2>${results[2].name}</h2>
                   <h3>Rating: ${results[2].rating}</h3>
@@ -74,7 +74,7 @@ let getGame = () => {
               </div>
                 
               <div class='info'>
-                <img src=${results[3].background_image} class='poster'>
+                <img id='imgSearch' src=${results[3].background_image} class='poster'>
                 <div>
                   <h2>${results[3].name}</h2>
                   <h3>Rating: ${results[3].rating}</h3>
